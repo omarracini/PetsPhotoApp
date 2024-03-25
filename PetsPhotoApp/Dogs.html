@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dog Photos</title>
+        <link rel="icon" type="image/svg+xml" href="img/orm-logo-icon.svg">
+    </head>
+    <body>
+        <header>
+            <a href="fccPetsPhotoApp.html">
+                <img src="img/home.svg" alt="Home" style="width: 1.5em; height: auto;">
+            </a>
+            <h1 style="display: inline-block; margin-left: 16em;">Dog Photo App</h1>
+            <img src="img/orm-icon-min.svg" alt="watermark" width="15%" height="auto" style="position: fixed; bottom: 0; right: 0; opacity: 0.2;">
+        </header>
+    </body>
+    <main>
+        <section>
+            <h2>Dog Photos</h2>
+            <p>Are you a dog lover? Does your best friend have four legs and an adorable bark?</p>
+            <p>Immerse yourself in a universe of information, advice, stories and resources for your dog to have a happy and adventurous life. Find everything from training tricks to homemade recipes, product reviews and the latest news from the canine world.</p>
+            <p>Join our community of dog lovers and discover a world of possibilities for your furry companion!</p>
+            <img src="img/happyDog.jpg" alt="A happy dog">
+        </section>
+        <h2>Dog List</h2>
+        <section style="display: flex;">
+            <div style="flex: 1;">
+                <h3>Things dogs love:</h3>
+                <ul>
+                    <li>To play fetch</li>
+                    <li>Go for walks</li>
+                    <li>Receive affection</li>
+                </ul>
+                <figure>
+                    <img src="img/ADogBeingLoved.jpg" alt="A dog being loved." width="75%" height="250px">
+                    <figcaption>Dogs <em>love</em> to receive affection.</figcaption>
+                </figure>
+            </div>
+            <div style="flex: 1;">
+                <h3>Top 3 things dogs hate: </h3>
+                <ol>
+                    <li>Being alone</li>
+                    <li>Fireworks</li>
+                    <li>Unpleasant smells</li>
+                </ol>
+                <figure>
+                    <img src="img/DogScared.jpg" alt="A dog scared by fireworks." width="75%" height="250px">
+                    <figcaption>Dogs <strong>hate</strong> fireworks.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>Dog Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <fieldset>
+                    <legend>What's your name?</legend>
+                    <label for="nickname"> My name is <input type="text" name="nickname" placeholder="Write your name here" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>How many dogs do you have? </legend>
+                    <label for="numbers">I have <input type="number" name="numbers" min="1" max="100" required  > dogs</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What kind of dogs do you prefer? </legend>
+                    <label for="Dog-Size"><input type="radio" name="Dog-Size" value="S" checked> Small size</label>
+                    <label for="Dog-Size"><input type="radio" name="Dog-Size" value="M"> Medium size </label>
+                    <label for="Dog-Size"><input type="radio" name="Dog-Size" value="L"> Large size </label>
+                </fieldset>
+                <fieldset>
+                    <legend> What's your dog's personality? </legend>
+                    <input type="checkbox" id="quiet" name="personaity" value="quiet" checked><label for="quiet">Quiet</label>
+                    <input type="checkbox" id="loving" name="personaity" value="loving" ><label for="loving">Loving</label>
+                    <input type="checkbox" id="smart" name="personaity" value="smart" ><label for="smart">Smart</label>
+                    <input type="checkbox" id="compliant" name="personaity" value="compliant" ><label for="compliant">Compliant</label>
+                    <input type="checkbox" id="dogged" name="personaity" value="dogged" ><label for="dogged">Dogged</label>
+                    <input type="checkbox" id="brave" name="personaity" value="brave" ><label for="brave">Brave</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Share a photo </legend>
+                    <input type="text" name="dogphotourl" placeholder="dog photo URL" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Tell us something more </legend>
+                    <textarea name="dog-bio" id="dog-bio" cols="30" rows="3" placeholder="Write here"></textarea>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer style="text-align: right;">
+        <p>
+            Developed by: Omar Racini M.
+        </p>
+    </footer>
+</html>
