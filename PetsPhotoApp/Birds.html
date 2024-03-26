@@ -14,13 +14,73 @@
             <h1 style="display: inline-block; margin-left: 16em;">Bird Photo App</h1>
             <img src="img/orm-icon-min.svg" alt="watermark" width="15%" height="auto" style="position: fixed; bottom: 0; right: 0; opacity: 0.2;">
         </header>
+        <main>
+            <section>
+                <h2>Bird Photos</h2>
+                <!-- TODO: Add bird image -->
+                <p>This is a place where you can learn and share about the beauty of birds.</p>
+                <img src="img/FreeBird.jpg" alt="A free bird" width="75%" height="auto">
+            </section>
+            <h2>Bird List</h2>
+            <section style="display: flex">
+                <div style="flex: 1;">
+                    <h3>Things bird love</h3>
+                    <ul>
+                        <li>Water</li>
+                        <li>Food</li>
+                        <li>Forests</li>
+                    </ul>
+                    <figure>
+                        <img src="img/BirdsInForest.jpg" alt="Birds in the forest">
+                        <figcaption>Birds <em>love</em> forests</figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1;">
+                    <h3>Top 3 things birds hate</h3>
+                    <ol>
+                        <li>Predators</li>
+                        <li>Pollution</li>
+                        <li>Deforestation</li>
+                    </ol>
+                    <figure>
+                        <img src="img/Deforestación.jpg" alt="Deforestación">
+                        <figcaption>Birds <strong>hate</strong> deforestation</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <h2>Bird Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <legend>What's your name?</legend>
+                        <label for="nickname"> My name is <input type="text" name="nickname" placeholder="Write your name here" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>How many birds do you have? </legend>
+                        <label for="numbers">I have <input type="number" name="numbers" min="1" max="100" required  > birds</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What kind of birds do you prefer? </legend>
+                        <label for="types-o-birds"><input type="radio" name="type-of-bird" value="songbirds" checked> Songbirds</label>
+                        <label for="types-o-birds"><input type="radio" name="type-of-bird" value="birdsOfPreyrey"> Birds of prey</label>
+                        <label for="types-o-birds"><input type="radio" name="type-of-bird" value="parrots"> Parrots </label> 
+                    </fieldset>
+                    <fieldset>
+                        <legend>Share a photo </legend>
+                        <input type="text" name="birdphotourl" placeholder="bird photo URL" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tell us something more </legend>
+                        <textarea name="bird-bio" id="bird-bio" cols="30" rows="3" placeholder="Write here"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer style="text-align: right;">
+            <p>
+                Developed by: Omar Racini M.
+            </p>
+        </footer>
     </body>
-    <main>
-
-    </main>
-    <footer style="text-align: right;">
-        <p>
-            Developed by: Omar Racini M.
-        </p>
-    </footer>
 </html>
