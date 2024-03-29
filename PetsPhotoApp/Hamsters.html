@@ -14,13 +14,75 @@
             <h1 style="display: inline-block; margin-left: 16em;">Hamster Photo App</h1>
             <img src="img/orm-icon-min.svg" alt="watermark" width="15%" height="auto" style="position: fixed; bottom: 0; right: 0; opacity: 0.2;">
         </header>
+        <main>
+            <section>
+                <h2>Hamster Photos</h2>
+                <p>The Adorable World of Hamsters in Your Hands!</p>
+                <p>Is your hamster the furry star of your life?</p>
+                <p>Capture the adorable poses, antics, and funny moments of your little friend and share them with the world.</p>
+                <img src="img/TwoBabyHamsters.jpg" alt="Two Baby Golden Hamsters" width="100%">
+            </section>
+            <h2>Types of hamster</h2>
+            <section style="display: flex;">
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/Hamster sirio o dorado.jfif" alt="Syrian or Golden Hamster">
+                        <figcaption><em>Syrian or Golden Hamster</em></figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/Hamster enano o ruso.jfif" alt="Russian Dwarf Hamster">
+                        <figcaption><em>Russian Dwarf Hamster</em></figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/Hamster chino.jfif" alt="Chinese Hamster">
+                        <figcaption><em>Chinese Hamster</em></figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/Hamster enano de campbell.jfif" alt="Campbell's Dwarf Hamster">
+                        <figcaption><em>Campbell's Dwarf Hamster</em></figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <h2>Hamsters Form</h2>
+                    <form action="https://freecatphotoapp.com/submit-cat-photo">
+                        <fieldset>
+                            <legend>What's your name?</legend>
+                            <label for="nickname"> My name is <input type="text" name="nickname" placeholder="Write your name here" required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>How many hamsters do you have? </legend>
+                            <label for="numbers">I have <input type="number" name="numbers" min="1" max="100" required > hamsters</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>What kind of hamsters do you prefer? </legend>
+                            <label for="hamster-type"><input type="radio" name="hamster-type" value="Syrian" checked> Syrian or Golden Hamster</label>
+                            <label for="hamster-type"><input type="radio" name="hamster-type" value="Russian"> Russian Dwarf Hamster</label>
+                            <label for="hamster-type"><input type="radio" name="hamster-type" value="Chinese"> Chinese Hamster</label>
+                            <label for="hamster-type"><input type="radio" name="hamster-type" value="Campbell"> Campbell's Dwarf Hamster</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Share a photo </legend>
+                            <input type="text" name="dogphotourl" placeholder="dog photo URL" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Tell us something more </legend>
+                            <textarea name="dog-bio" id="dog-bio" cols="30" rows="3" placeholder="Write here"></textarea>
+                        </fieldset>
+                        <button type="submit">Submit</button>
+                    </form>
+            </section>
+        </main>
+        <footer style="text-align: right;">
+            <p>
+                Developed by: Omar Racini M.
+            </p>
+        </footer>
     </body>
-    <main>
-
-    </main>
-    <footer style="text-align: right;">
-        <p>
-            Developed by: Omar Racini M.
-        </p>
-    </footer>
 </html>
