@@ -14,13 +14,121 @@
             <h1 style="display: inline-block; margin-left: 16em;">Rabbit Photo App</h1>
             <img src="img/orm-icon-min.svg" alt="watermark" width="15%" height="auto" style="position: fixed; bottom: 0; right: 0; opacity: 0.2;">
         </header>
+        <main>
+            <section>
+                <h2>Rabbit Photos</h2>
+                <p>The adorable world of rabbits in your hands!</p>
+                <p>Is your rabbit the furry star of your life?</p>
+                <p>Capture the adorable poses, antics, and funny moments of your little friend and share them with the world.</p>
+                <p>See more at <a traget="_blank" href="https://arba.net/">The American Rabbit Breeders Association</a></p>
+                <img src="img/FreeRabbits.jpg" alt="Rabbits" width="100%">
+            </section>
+            <h2>Rabbit list</h2>
+            <section style="display: flex;">
+                <div style="flex: 1;">
+                    <h3>Breed rabbits</h3>
+                    <h4>1. Dwarf Rabbits</h4>
+                    <ul>
+                        <li>Mini Lop</li>
+                        <li>Jersey Wooly</li>
+                        <li>Netherland Dwarf</li>
+                        <li>Holland Lop</li>
+                        <li>Lionhead</li>
+                        <li>Mini Rex</li>
+                    </ul>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/MiniLoop.jfif" alt="Mini Loop">
+                        <figcaption><em>Mini Loop</em></figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/Lionhead.jfif" alt="Lionhead">
+                        <figcaption><em>Lionhead</em></figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section style="display: flex;">
+                <div style="flex: 1;">
+                    <h4>2. Medium Rabbits</h4>
+                    <ul>
+                        <li>Belier</li>
+                        <li>Harlequin</li>
+                        <li>Dutch</li>
+                        <li>Mini Lion Lop</li>
+                        <li>Rex</li>
+                    </ul>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/ConejoBelier.jfif" alt="Belier">
+                        <figcaption><em>Belier</em></figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/ConejoRex.jfif" alt="Rex">
+                        <figcaption><em>Rex</em></figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section style="display: flex;">
+                <div style="flex: 1;">
+                    <li>Giant Rabbits</li>
+                        <ul>
+                            <li>Flemish Giant</li>
+                            <li>Continental Giant</li>
+                        </ul>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/FlemishGiant.jfif" alt="Flemish Giant">
+                        <figcaption><em>Flemish Giant</em></figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1;">
+                    <figure>
+                        <img src="img/ContinentalGiant.jfif" alt="Continental Giant">
+                        <figcaption><em>Continental Giant</em></figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <h2>Rabbits Form</h2>
+                    <form action="https://freecatphotoapp.com/submit-cat-photo">
+                        <fieldset>
+                            <legend>What's your name?</legend>
+                            <label for="nickname"> My name is <input type="text" name="nickname" placeholder="Write your name here" required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>How many rabbits do you have? </legend>
+                            <label for="numbers">I have <input type="number" name="numbers" min="1" max="100" required > rabbits</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>What kind of rabbits do you prefer? </legend>
+                            <label for="rabbits-type"><input type="radio" name="rabbits-type" value="Dwarf" checked> Dwarf Rabbits</label>
+                            <label for="rabbits-type"><input type="radio" name="rabbits-type" value="Medium"> Medium Rabbits</label>
+                            <label for="rabbits-type"><input type="radio" name="rabbits-type" value="Giant"> Giant Rabbits</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Share a photo </legend>
+                            <input type="text" name="dogphotourl" placeholder="dog photo URL" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Tell us something more </legend>
+                            <textarea name="dog-bio" id="dog-bio" cols="30" rows="3" placeholder="Write here"></textarea>
+                        </fieldset>
+                        <button type="submit">Submit</button>
+                    </form>
+            </section>
+        </main>
+        <footer style="text-align: right;">
+            <p>
+                Developed by: Omar Racini M.
+            </p>
+        </footer>
     </body>
-    <main>
-
-    </main>
-    <footer style="text-align: right;">
-        <p>
-            Developed by: Omar Racini M.
-        </p>
-    </footer>
+    
 </html>
